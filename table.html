@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ"
+      crossorigin="anonymous"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Sidebar menu responsive</title>
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header__toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+      <i style="color: #4723d9; font-size: 17px" class="far fa-envelope"></i>
+      <i style="color: #4723d9; font-size: 17px" class="far fa-bell"></i>
+
+      <p
+        class="time_css shadow mt-3"
+        style="color: white; background: #f75d81; padding: 5px"
+      >
+        <span id="datetime"></span>
+      </p>
+      <div class="header__img">
+        <img src="assets/img/perfil.jpg" alt="" />
+      </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav__logo">
+            <i class="nav__logo-icon"></i>
+            <span class="nav__logo-name">
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/logo.png"
+                alt="Google"
+              />
+            </span>
+          </a>
+
+          <div class="nav__list">
+            <a href="index.html" class="nav__link active">
+              <i class="bx bx-grid-alt nav__icon"></i>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <a href="Typography.html" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__name">Typography</span>
+            </a>
+
+            <a href="widgets.html" class="nav__link">
+              <i class="bx bx-message-square-detail nav__icon"></i>
+              <span class="nav__name">Widgets</span>
+            </a>
+            <a href="table.html" class="nav__link">
+              <i class="fas fa-table"></i>
+              <span class="nav__name">Table</span>
+            </a>
+            <a href="forms.html" class="nav__link">
+              <i class="bx bx-bookmark nav__icon"></i>
+              <span class="nav__name">Forms</span>
+            </a>
+
+            <a href="userInterface.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">User Interfaces</span>
+            </a>
+
+            <a href="charts.html" class="nav__link">
+              <i class="bx bx-bar-chart-alt-2 nav__icon"></i>
+              <span class="nav__name">Charts</span>
+            </a>
+            <a href="calender.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">Calender</span>
+            </a>
+            <a href="photo.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">Image Gallery</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="nav__link">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+    <!-- Side bar End -->
+    <section>
+      <h3 class="ml-3 my-3">Tables</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12 mx-auto">
+            <div class="table_css">
+              <p>Basic Table</p>
+              <p style="font-size: 13px">
+                For basic styling—light padding and only horizontal dividers—add
+                the base class .table to any
+                <span class="text-info">Table</span>. It may seem super
+                redundant, but given the widespread use of tables for other
+                plugins like calendars and date pickers, we've opted to isolate
+                our custom table styles.
+              </p>
+              <div class="container">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th scope="col"></th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">#1</th>
+                      <td>Emir Wicks</td>
+                      <td>emir.wicks@mail.com</td>
+                      <td>Yes</td>
+                      <td class="text-right">
+                        <i class="fas fa-eye mr-3"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#2</th>
+                      <td>Zaina Goldsmith</td>
+                      <td>zaina.goldsmith@mail.com</td>
+                      <td>Yes</td>
+                      <td class="text-right">
+                        <i class="fas fa-eye mr-3"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">#3</th>
+                      <td>Mahima Lopez</td>
+                      <td>Mahima.Lopez@mail.com</td>
+                      <td>Yes</td>
+                      <td class="text-right">
+                        <i class="fas fa-eye mr-3"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-3">
+        <div class="table_css">
+          <h2>Hover Rows</h2>
+          <p>
+            The .table-hover class enables a hover state (grey background on
+            mouse over) on table rows:
+          </p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-2">
+        <h2>Table Head Colors</h2>
+        <p>
+          The .thead-dark class adds a black background to table h eaders, and
+          the .thead-light class adds a grey background to table headers:
+        </p>
+        <div class="table_css">
+          <table class="table">
+            <thead class="bg-dark">
+              <tr class="text-white">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <table class="table">
+            <thead class="bg-danger">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br />
+      <div class="container-fluid mt-2">
+        <h2>Table Head Colors</h2>
+        <p>
+          The .thead-dark class adds a black background to table h eaders, and
+          the .thead-light class adds a grey background to table headers:
+        </p>
+        <div class="table_css">
+          <table class="table">
+            <thead class="bg-info">
+              <tr class="text-white">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <table class="table">
+            <thead class="bg-primary">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br />
+
+      <div class="container-fluid mt-2 ml-3">
+        <div class="row">
+          <p></p>
+          <h3>Table Panel</h3>
+          <p> </p>
+          <div class="table_css">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="panel panel-default panel-table">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col col-xs-6">
+                      <h3 class="panel-title">Panel Heading</h3>
+                    </div>
+                    <div class="col col-xs-6 text-right">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-primary btn-create"
+                      >
+                        Create New Task
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <table class="table table-striped table-bordered table-list">
+                    <thead>
+                      <tr>
+                        <th><em class="fa fa-cog"></em></th>
+                        <th class="hidden-xs">ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <a class="btn btn-default"
+                            ><em class="fa fa-pencil"></em
+                          ></a>
+                          <a class="btn btn-danger"
+                            ><em class="fa fa-trash"></em
+                          ></a>
+                        </td>
+                        <td class="hidden-xs">1</td>
+                        <td>Master Shine</td>
+                        <td>name@domain.com</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <a class="btn btn-default"
+                            ><em class="fa fa-pencil"></em
+                          ></a>
+                          <a class="btn btn-danger"
+                            ><em class="fa fa-trash"></em
+                          ></a>
+                        </td>
+                        <td class="hidden-xs">1</td>
+                        <td>Master Shine</td>
+                        <td>name@domain.com</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <a class="btn btn-default"
+                            ><em class="fa fa-pencil"></em
+                          ></a>
+                          <a class="btn btn-danger"
+                            ><em class="fa fa-trash"></em
+                          ></a>
+                        </td>
+                        <td class="hidden-xs">1</td>
+                        <td>Master Shine</td>
+                        <td>name@domain.com</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <a class="btn btn-default"
+                            ><em class="fa fa-pencil"></em
+                          ></a>
+                          <a class="btn btn-danger"
+                            ><em class="fa fa-trash"></em
+                          ></a>
+                        </td>
+                        <td class="hidden-xs">1</td>
+                        <td>Master Shine</td>
+                        <td>name@domain.com</td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <a class="btn btn-default"
+                            ><em class="fa fa-pencil"></em
+                          ></a>
+                          <a class="btn btn-danger"
+                            ><em class="fa fa-trash"></em
+                          ></a>
+                        </td>
+                        <td class="hidden-xs">1</td>
+                        <td>Master Shine</td>
+                        <td>name@domain.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

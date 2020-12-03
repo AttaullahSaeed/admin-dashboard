@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ"
+      crossorigin="anonymous"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/icone.css" />
+    <title>Sidebar menu responsive</title>
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header__toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+      <i style="color: #4723d9; font-size: 17px" class="far fa-envelope"></i>
+      <i style="color: #4723d9; font-size: 17px" class="far fa-bell"></i>
+
+      <p
+        class="time_css shadow mt-3"
+        style="color: white; background: #f75d81; padding: 5px"
+      >
+        <span id="datetime"></span>
+      </p>
+      <div class="header__img">
+        <img src="assets/img/perfil.jpg" alt="" />
+      </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav__logo">
+            <i class="nav__logo-icon"></i>
+            <span class="nav__logo-name">
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/logo.png"
+                alt="Google"
+              />
+            </span>
+          </a>
+
+          <div class="nav__list">
+            <a href="index.html" class="nav__link active">
+              <i class="bx bx-grid-alt nav__icon"></i>
+              <span class="nav__name">Home</span>
+            </a>
+
+            <a href="Typography.html" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__name">Typography</span>
+            </a>
+
+            <a href="widgets.html" class="nav__link">
+              <i class="bx bx-message-square-detail nav__icon"></i>
+              <span class="nav__name">Widgets</span>
+            </a>
+            <a href="table.html" class="nav__link">
+              <i class="fas fa-table"></i>
+              <span class="nav__name">Table</span>
+            </a>
+            <a href="forms.html" class="nav__link">
+              <i class="bx bx-bookmark nav__icon"></i>
+              <span class="nav__name">Forms</span>
+            </a>
+
+            <a href="userInterface.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">User Interfaces</span>
+            </a>
+
+            <a href="charts.html" class="nav__link">
+              <i class="bx bx-bar-chart-alt-2 nav__icon"></i>
+              <span class="nav__name">Charts</span>
+            </a>
+            <a href="calender.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">Calender</span>
+            </a>
+            <a href="photo.html" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">Image Gallery</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="nav__link">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+
+    <section class="">
+      <h5 class="ml-2">Colors</h5>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #f39c12; color: #fff; padding: 8px">
+                Orange
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #e74c3c; color: #fff; padding: 8px">
+                Red
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #3498db; color: #fff; padding: 8px">
+                Blue
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #34495e; color: #fff; padding: 8px">
+                Wet
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #16a085; color: #fff; padding: 8px">
+                Green
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #273c75; color: #fff; padding: 8px">
+                Blue
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #353b48; color: #fff; padding: 8px">
+                Black
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12 mx-auto">
+            <div class="header-ccs">
+              <h5 style="background: #44bd32; color: #fff; padding: 8px">
+                Wet
+              </h5>
+              <p style="color: black; font-size: 14px; padding: 10px">
+                Integer non pulvinar tellus, eget vulputate ex. Nam augue
+                sapien, porttitor vel fermentum pellentesque, dictum vel mi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="ml-2 my-4">Pure CSS3 Animations</h4>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/1.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>flash</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/2.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>flash</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/4.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>bounce</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/5.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>flash</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/9.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>flash</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="table_css">
+              <h6>Attention Seekers</h6>
+              <p>Click on the buttons below to start the animation</p>
+              <img
+                src="http://practoadmin.justthemevalley.com/practoadmin/img/headers/sm/3.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="btn__css">
+                <button>bounce</button>
+                <button>bounce</button>
+              </div>
+              <div class="btn__css">
+                <button>shake.</button>
+                <button>swing</button>
+              </div>
+              <div class="btn__css">
+                <button>tada..</button>
+                <button>woble</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-4">Buttons</h4>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-link">Link</button>
+      <br />
+      <br />
+      <a class="btn btn-primary" href="#" role="button">Link</a>
+      <button class="btn btn-primary" type="submit">Button</button>
+      <input class="btn btn-primary" type="button" value="Input" />
+      <input class="btn btn-primary" type="submit" value="Submit" />
+      <input class="btn btn-primary" type="reset" value="Reset" />
+      <br />
+      <br />
+      <h4>Outline buttons</h4>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button><br />
+      <br />
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button><br />
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <br />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Button</button><br />
+        <button class="btn btn-primary" type="button">Button</button>
+        <br />
+        <button class="btn btn-sm btn-rounded-circle btn-white">+</button>
+        <button class="btn btn-rounded-circle btn-white">+</button>
+        <button class="btn btn-lg btn-rounded-circle btn-white">+</button>
+      </div>
+      <br />
+      <h3>Icones</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12 mx-auto bg-dark">
+            <div class="stage">
+              <span><i class="icono-home"></i></span>
+              <span><i class="icono-mail"></i></span>
+              <span><i class="icono-rss"></i></span>
+              <span><i class="icono-hamburger"></i></span>
+              <span><i class="icono-plus"></i></span>
+              <span><i class="icono-cross"></i></span>
+              <span><i class="icono-check"></i></span>
+              <span><i class="icono-power"></i></span>
+              <span><i class="icono-heart"></i></span>
+              <span><i class="icono-flag"></i></span>
+              <span><i class="icono-share"></i></span>
+              <span><i class="icono-pin"></i></span>
+              <span><i class="icono-locationArrow"></i></span>
+              <span><i class="icono-asterisk"></i></span>
+              <span><i class="icono-image"></i></span>
+              <span><i class="icono-video"></i></span>
+              <span><i class="icono-music"></i></span>
+              <span><i class="icono-document"></i></span>
+              <span><i class="icono-file"></i></span>
+              <span><i class="icono-folder"></i></span>
+              <span><i class="icono-smile"></i></span>
+              <span><i class="icono-frown"></i></span>
+              <span><i class="icono-meh"></i></span>
+              <span><i class="icono-user"></i></span>
+              <span><i class="icono-eye"></i></span>
+              <span><i class="icono-sliders"></i></span>
+              <span><i class="icono-infinity"></i></span>
+              <span><i class="icono-sync"></i></span>
+              <span><i class="icono-sync spin"></i></span>
+              <span><i class="icono-reset"></i></span>
+              <span><i class="icono-reset spin"></i></span>
+              <span><i class="icono-gear"></i></span>
+              <span><i class="icono-gear spin"></i></span>
+              <span><i class="icono-signIn"></i></span>
+              <span><i class="icono-signOut"></i></span>
+              <span><i class="icono-book"></i></span>
+              <span><i class="icono-support"></i></span>
+              <span><i class="icono-dropper"></i></span>
+              <span><i class="icono-chain"></i></span>
+              <span><i class="icono-paperClip"></i></span>
+              <span><i class="icono-search"></i></span>
+              <span><i class="icono-rename"></i></span>
+              <span><i class="icono-crop"></i></span>
+              <span><i class="icono-trash"></i></span>
+              <span><i class="icono-keyboard"></i></span>
+              <span><i class="icono-mouse"></i></span>
+              <span><i class="icono-headphone"></i></span>
+              <span><i class="icono-microphone"></i></span>
+              <span><i class="icono-display"></i></span>
+              <span><i class="icono-imac"></i></span>
+              <span><i class="icono-iphone"></i></span>
+              <span><i class="icono-macbook"></i></span>
+              <span><i class="icono-imacBold"></i></span>
+              <span><i class="icono-iphoneBold"></i></span>
+              <span><i class="icono-macbookBold"></i></span>
+              <span><i class="icono-nexus"></i></span>
+              <span><i class="icono-terminal"></i></span>
+              <span><i class="icono-youtube"></i></span>
+              <span><i class="icono-market"></i></span>
+              <span><i class="icono-clock"></i></span>
+              <span><i class="icono-tiles"></i></span>
+              <span><i class="icono-list"></i></span>
+              <span><i class="icono-forbidden"></i></span>
+              <span><i class="icono-plusCircle"></i></span>
+              <span><i class="icono-crossCircle"></i></span>
+              <span><i class="icono-checkCircle"></i></span>
+              <span><i class="icono-exclamationCircle"></i></span>
+              <span><i class="icono-exclamation"></i></span>
+              <span><i class="icono-textAlignRight"></i></span>
+              <span><i class="icono-textAlignCenter"></i></span>
+              <span><i class="icono-textAlignLeft"></i></span>
+              <span><i class="icono-indent"></i></span>
+              <span><i class="icono-outdent"></i></span>
+              <span><i class="icono-comment"></i></span>
+              <span><i class="icono-commentEmpty"></i></span>
+              <span><i class="icono-areaChart"></i></span>
+              <span><i class="icono-pieChart"></i></span>
+              <span><i class="icono-barChart"></i></span>
+              <span><i class="icono-bookmark"></i></span>
+              <span><i class="icono-bookmarkEmpty"></i></span>
+              <span><i class="icono-filter"></i></span>
+              <span><i class="icono-volume"></i></span>
+              <span><i class="icono-volumeLow"></i></span>
+              <span><i class="icono-volumeMedium"></i></span>
+              <span><i class="icono-volumeHigh"></i></span>
+              <span><i class="icono-volumeDecrease"></i></span>
+              <span><i class="icono-volumeIncrease"></i></span>
+              <span><i class="icono-volumeMute"></i></span>
+              <span><i class="icono-tag"></i></span>
+              <span><i class="icono-calendar"></i></span>
+              <span><i class="icono-camera"></i></span>
+              <span><i class="icono-piano"></i></span>
+              <span><i class="icono-ruler"></i></span>
+              <span><i class="icono-cup"></i></span>
+              <span><i class="icono-creditCard"></i></span>
+              <span><i class="icono-facebook"></i></span>
+              <span><i class="icono-twitter"></i></span>
+              <span><i class="icono-instagram"></i></span>
+              <span><i class="icono-linkedIn"></i></span>
+              <span><i class="icono-flickr"></i></span>
+              <span><i class="icono-delicious"></i></span>
+              <span><i class="icono-codepen"></i></span>
+              <span><i class="icono-blogger"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 class="mt-3">Alerts</h3>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div>
+      <br />
+      <br />
+      <h3>Carousel</h3>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12 mx-auto">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="http://practoadmin.justthemevalley.com/practoadmin/img/media/carousel/c-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="http://practoadmin.justthemevalley.com/practoadmin/img/media/carousel/c-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="http://practoadmin.justthemevalley.com/practoadmin/img/media/carousel/c-1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="wrapper1">
+        <input type="radio" name="slider" checked id="home" />
+        <input type="radio" name="slider" id="blog" />
+        <input type="radio" name="slider" id="code" />
+        <input type="radio" name="slider" id="help" />
+        <input type="radio" name="slider" id="about" />
+        <nav>
+          <label for="home" class="home"><i class="fas fa-home"></i>Home</label>
+          <label for="blog" class="blog"><i class="fas fa-blog"></i>Blog</label>
+          <label for="code" class="code"><i class="fas fa-code"></i>Code</label>
+          <label for="help" class="help"
+            ><i class="far fa-envelope"></i>Help</label
+          >
+          <label for="about" class="about"
+            ><i class="far fa-user"></i>About</label
+          >
+          <div class="slider"></div>
+        </nav>
+        <section>
+          <div class="content content-1">
+            <div class="title">This is a Home content</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              aspernatur nobis provident dolores molestias quia quisquam
+              laborum, inventore quis, distinctioa, fugit repudiandae delectus
+              sunt ipsam! Odio illo at quia doloremque fugit iops, asperiores?
+              Consectetur esse officia labore voluptatum blanditiis molestias
+              dic voluptas est, minima unde sequi, praesentium dicta suscipit
+              quisquam iure sed, nemo.
+            </p>
+          </div>
+          <div class="content content-2">
+            <div class="title">This is a Blog content</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit amet.
+              Possimus doloris nesciunt mollitia culpa sint itaque, vitae
+              praesentium assumenda suscipit fugit doloremque adipisci
+              doloribus, sequi facere itaque cumque accusamus, quam molestias
+              sed provident quibusdam nam deleniti. Autem eaque aut impedit eo
+              nobis quia, eos sequi tempore! Facere ex repellendus, laboriosam
+              perferendise. Enim quis illo harum, exercitationem nam totam fugit
+              omnis natus quam totam, repudiandae dolor laborum! Commodi?
+            </p>
+          </div>
+          <div class="content content-3">
+            <div class="title">This is a Code content</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+              debitis nesciunt! Consectetur officiis, libero nobis dolorem
+              pariatur quisquam temporibus. Labore quaerat neque facere itaque
+              laudantium odit veniam consectetur numquam delectus aspernatur,
+              perferendis repellat illo sequi excepturi quos ipsam aliquid est
+              consequuntur.
+            </p>
+          </div>
+          <div class="content content-4">
+            <div class="title">This is a Help content</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+              reprehenderit null itaq, odio repellat asperiores vel voluptatem
+              magnam praesentium, eveniet iure ab facere officiis. Quod sequi
+              vel, rem quam provident soluta nihil, eos. Illo oditu omnis cumque
+              praesentium voluptate maxime voluptatibus facilis nulla ipsam
+              quidem mollitia! Veniam, fuga, possimus. Commodi, fugiat aut ut
+              quorioms stu necessitatibus, cumque laborum rem provident tenetur.
+            </p>
+          </div>
+          <div class="content content-5">
+            <div class="title">This is a About content</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur officia sequi aliquam. Voluptatem distinctio nemo
+              culpa veritatis nostrum fugit rem adipisci ea ipsam, non veniam ut
+              aspernatur aperiam assumenda quis esse soluta vitae, placeat
+              quasi. Iste dolorum asperiores hic impedit nesciunt atqu, officia
+              magnam commodi iusto aliquid eaque, libero.
+            </p>
+          </div>
+        </section>
+      </div>
+      <br />
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="progress_title text-info">Node js</h3>
+          </div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 30%"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="progress_title text-secondary">Html</h3>
+          </div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="progress_title text-danger">Python</h3>
+          </div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 70%; color: #000"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <h3 class="progress_title text-primary">React js</h3>
+          </div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 40%"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
